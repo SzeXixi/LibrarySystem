@@ -24,7 +24,7 @@ const routes = [
   {
     path: '/main',
     name: 'main',
-    component: () => import( '../views/tias/MainView.vue')
+    component: () => import( '../views/MainView.vue')
   },
   {
     path: '/emp',

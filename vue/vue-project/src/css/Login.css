@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background-image: url("../assets/img/background1.jpg");
+    background-image: url("../assets/img/background2.jpg");
     background-size: cover; /* 背景图像的尺寸适应方式，可根据需要调整 */
     background-position: center center; /* 背景图像的水平和垂直位置，可根据需要调整 */
     /* background-position: 20px; */
@@ -104,7 +104,7 @@ body {
     top: 0;
     z-index: 99;
     border-radius: 4px;
-    background-color: #c7c2bc;
+    background-color: #e9e2dd;
     box-shadow: 2px 1px 19px rgba(0, 0, 0, .1);
     /* 动画过渡，先加速再减速 */
     transition: 0.5s ease-in-out;
@@ -138,8 +138,8 @@ body {
 
 /* 图片盒子 */
 .img-box {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 20px auto;
     /* 设置为圆形 */
     border-radius: 50%;
@@ -239,12 +239,12 @@ button:hover {
     opacity: .8;
 }
 /* 按钮文字盒子 */
-.btext-box {
+.text-box {
     display: flex;
     justify-content: center;
 }
 /* 按钮文字 */
- .btext-box p {
+ .text-box p {
     height: 30px;
     width: 120px;
     margin: 0 0 0 30px;
@@ -257,7 +257,7 @@ button:hover {
 
 }
 
-.btext-box p:hover {
+.text-box p:hover {
     cursor: pointer;
     border-bottom: 1px solid white;
 }

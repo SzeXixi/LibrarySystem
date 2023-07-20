@@ -2,13 +2,13 @@
   <div>
     <!-- 顶部区域 -->
     <el-container style="height: 740px; border: 1px solid #eee">
-      <el-header style="font-size: 40px; background-color: rgb(238, 241, 246)"
+      <el-header style="font-size: 40px; background-color:#eae2dd"
         >图书管理系统</el-header
       >
       <!-- 侧边栏 -->
       <el-container >
-        <el-aside width="230px" height="900px" style="border: 1px solid #eee;background-color: rgb(238, 241, 246)">
-          <el-menu :default-openeds="['1', '3']">
+        <el-aside width="230px" height="900px" style="border: 5px solid #eee;background-color:#e9e2dd">
+          <el-menu :default-openeds="['1', '3']" style="background-color:#f2efeb">
         
               <el-menu-item >
                 <router-link to="/dept">个人信息</router-link>
@@ -30,12 +30,10 @@
         </el-aside>
 
         <!-- 右边区域 -->
-        <el-main
-          style="position: relative; height: 550px;display: flex; flex-direction: column; align-items: center; "
-        >
+        <el-main class="main">
         <!-- 轮播图 -->
-          <el-carousel indicator-position="outside"  style="height: 100%; width:100%;position: absolute; z-index: 1;">
-            <el-carousel-item v-for="item in 4" :key="item">
+          <el-carousel class="carousel" indicator-position="outside" >
+            <el-carousel-item v-for="item in 4" :key="item" class="item">
               <h3>{{ item }}</h3>
             </el-carousel-item>
           </el-carousel>
@@ -133,6 +131,33 @@ export default {
   
   .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
-    /* background-image: url("C:\Users\sze_xixi\Desktop\MyLibrary\vue\vue-project\src\assets\img\mainimg1.jpg"); */
+    background-image: url("../assets/img/mainimg1.jpg"); 
   }
+  .main {
+    position: relative; 
+    height: 100%;
+    width: 100%;
+    display: flex;
+     flex-direction: column; 
+     align-items: center; 
+     overflow: hidden;
+     margin: 0;
+     background-image: url("../assets/img/background2.jpg");
+     background-size: cover; /* 背景图像的尺寸适应方式，可根据需要调整 */
+    background-position: center center; /* 背景图像的水平和垂直位置，可根据需要调整 */
+  }
+  .main .carousel {
+    height: 100%; 
+    width:100%;
+    position: absolute; 
+    z-index: 1;
+    margin-top: -18px;
+
+  }
+  .carousel .item {
+    height: 100%; 
+    width:100%;
+    position: absolute; 
+  }
+  
 </style>
