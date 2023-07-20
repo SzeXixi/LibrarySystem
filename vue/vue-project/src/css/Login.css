@@ -25,7 +25,7 @@ body {
     /* background: linear-gradient(to right, rgb(247, 209, 215), rgb(191, 227, 241)); */
 }
 
-span {
+#bubble span {
     position: absolute;
     z-index: 0;
     bottom: 0;
@@ -42,7 +42,10 @@ span {
     animation: myMove 4s linear infinite;
 }
 
-
+#login {
+    color:#fff;
+    text-decoration: none;
+}
 @keyframes myMove {
     0% {
         transform: translateY(0%);

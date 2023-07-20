@@ -8,17 +8,18 @@
     <!-- <element-view></element-view> -->
 
     <!-- <emp-view></emp-view> -->
-    <!-- <router-view></router-view>  -->
-    <login-view></login-view>
+    <!-- 动态展示标签 -->
+    <router-view></router-view> 
+    <!-- <login-view></login-view> -->
   </div>
 </template>
 
 <script>
 // import EmpView from './views/tias/EmpView.vue';
 //import ElementView from './views/element/ElementView.vue';
-import LoginView from './views/LoginView.vue';
+// import LoginView from './views/LoginView.vue';
 export default {
-  components: {LoginView/*EmpView*/ /*ElementView*/ },
+  components: {/*LoginView*//*EmpView*/ /*ElementView*/ },
   data: function () {
     return {
       message: "hello vue", //数据模型
