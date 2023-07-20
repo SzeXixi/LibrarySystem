@@ -51,7 +51,9 @@
       </div> 
       <!-- 按钮盒子 -->
        <div class="btn-box">
-        <button>登录</button>
+        <button>
+          <router-link to="/main"><a id="login">登录</a></router-link>
+          </button>
       </div> 
        <div class="btext-box"> 
         <!-- 绑定点击事件 -->

@@ -8,22 +8,21 @@
     <!-- <element-view></element-view> -->
 
     <!-- <emp-view></emp-view> -->
-    <!-- <router-view></router-view>  -->
-    <!-- <login-view></login-view>  -->
-    <insertbook-view></insertbook-view>
-    <!-- <updatebook-view></updatebook-view> -->
+    <!-- 动态展示标签 -->
+    <router-view></router-view> 
+    <!-- <login-view></login-view> -->
   </div>
 </template>
 
 <script>
 /* import UpdatebookView from './views/UpdatebookView.vue'; */
-import InsertbookView from './views/InsertbookView.vue'; 
+/* import InsertbookView from './views/InsertbookView.vue';  */
 
 // import EmpView from './views/tias/EmpView.vue';
 //import ElementView from './views/element/ElementView.vue';
-/* import LoginView from './views/LoginView.vue';  */
+// import LoginView from './views/LoginView.vue';
 export default {
-  components: {/* UpdatebookView */ InsertbookView   /* LoginView */ /*EmpView*/ /*ElementView*/ },
+  components: {/*LoginView*//*EmpView*/ /*ElementView*/ },
   data: function () {
     return {
       message: "hello vue", //数据模型

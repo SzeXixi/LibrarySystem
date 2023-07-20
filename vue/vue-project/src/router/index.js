@@ -4,11 +4,6 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import( '../views/LoginView.vue')
-  },
   /* {
     path: '/register',
     name: 'register',
@@ -18,7 +13,29 @@ const routes = [
     path: '/',
     redirect:'/login',
     component: () => import('../views/LoginView.vue')
-  }
+  },
+  //登入页
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import( '../views/LoginView.vue')
+  },
+  // 主页
+  {
+    path: '/main',
+    name: 'main',
+    component: () => import( '../views/tias/MainView.vue')
+  },
+  {
+    path: '/emp',
+    name: 'emp',
+    component: () => import('../views/tias/EmpView.vue')
+  },
+  {
+    path: '/dept',
+    name: 'dept',
+    component: () => import( '../views/tias/DeptView.vue')
+  },
 ]
 
 const router = new VueRouter({
