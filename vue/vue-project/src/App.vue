@@ -9,16 +9,21 @@
 
     <!-- <emp-view></emp-view> -->
     <!-- <router-view></router-view>  -->
-    <login-view></login-view>
+    <!-- <login-view></login-view>  -->
+    <insertbook-view></insertbook-view>
+    <!-- <updatebook-view></updatebook-view> -->
   </div>
 </template>
 
 <script>
+/* import UpdatebookView from './views/UpdatebookView.vue'; */
+import InsertbookView from './views/InsertbookView.vue'; 
+
 // import EmpView from './views/tias/EmpView.vue';
 //import ElementView from './views/element/ElementView.vue';
-import LoginView from './views/LoginView.vue';
+/* import LoginView from './views/LoginView.vue';  */
 export default {
-  components: {LoginView/*EmpView*/ /*ElementView*/ },
+  components: {/* UpdatebookView */ InsertbookView   /* LoginView */ /*EmpView*/ /*ElementView*/ },
   data: function () {
     return {
       message: "hello vue", //数据模型
