@@ -11,9 +11,9 @@
   background-color="#c7c2bc"
   text-color="#fff"
   active-text-color="#ffd04b" >
-  <el-menu-item index="1" class="nav-item"><h1>录入图书</h1></el-menu-item>
-  <el-menu-item index="2" class="nav-item"><h1>修改图书信息</h1></el-menu-item>
-  <el-menu-item index="3" class="nav-item"><h1>删除图书</h1></el-menu-item>
+  <el-menu-item index="1" class="nav-item" ><router-link to="/BookInsert" class="no-underline"><h1>录入图书</h1></router-link></el-menu-item>
+  <el-menu-item index="2" class="nav-item"><router-link to="/BookUpdate" class="no-underline"><h1>修改图书信息</h1></router-link></el-menu-item>
+  <el-menu-item index="3" class="nav-item"><router-link to="/BookDelete" class="no-underline"><h1>删除图书</h1></router-link></el-menu-item>
 </el-menu>
 </el-header>
   <el-main >
@@ -122,6 +122,10 @@
   justify-content: center;
    margin-top: -80px; /* 根据需要调整上边距的值 */
    margin-left: 80px; /* 根据需要调整左边距的值 */
+}
+.no-underline {
+  text-decoration: none; /* 去除下划线 */
+  color: inherit; /* 继承父元素的文字颜色 */
 }
     
 </style>

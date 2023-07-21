@@ -36,6 +36,26 @@ const routes = [
     name: 'dept',
     component: () => import( '../views/tias/DeptView.vue')
   },
+  {
+    path: '/BookInsert',
+    name: 'BookInsert',
+    component: () => import( '../views/InsertbookView.vue')
+  },
+  {
+    path: '/BookUpdate',
+    name: 'BookUpdate',
+    component: () => import( '../views/UpdatebookView.vue')
+  },
+  {
+    path: '/BookDelete',
+    name: 'BookDelete',
+    component: () => import( '../views/DeletebookView.vue')
+  },
+  {
+    path: '/UserManage',
+    name: 'UserManage',
+    component: () => import( '../views/UsermanageView.vue')
+  }
 ]
 
 const router = new VueRouter({

@@ -11,18 +11,18 @@
           <el-menu :default-openeds="['1', '3']" style="background-color:#f2efeb">
         
               <el-menu-item >
-                <router-link to="/dept">个人信息</router-link>
+                <router-link to="/dept" class="no-underline">个人信息</router-link>
               </el-menu-item>
               <el-menu-item >
-                <router-link to="/emp">我的借阅</router-link>
+                <router-link to="/emp" class="no-underline">我的借阅</router-link>
               </el-menu-item>
          
              <el-submenu index="2">
         <template slot="title"><i class="el-icon-menu"></i>管理员权限</template>
         <el-menu-item-group>
 
-          <el-menu-item index="2-1">用户管理</el-menu-item>
-          <el-menu-item index="2-2">图书管理</el-menu-item>
+          <el-menu-item index="2-1"><router-link to="/UserManage" class="no-underline">用户管理</router-link></el-menu-item>
+          <el-menu-item index="2-2" ><router-link to="/BookInsert" class="no-underline">图书管理</router-link></el-menu-item>
         </el-menu-item-group>
     
       </el-submenu>
@@ -127,6 +127,7 @@ export default {
   
   .el-carousel__item:nth-child(2n) {
     background-color: #b7bf99;
+    background-image: url("../assets/img/mainimg2.jpg"); 
   }
   
   .el-carousel__item:nth-child(2n+1) {
@@ -159,5 +160,9 @@ export default {
     width:100%;
     position: absolute; 
   }
+  .no-underline {
+  text-decoration: none; /* 去除下划线 */
+  color: inherit; /* 继承父元素的文字颜色 */
+}
   
 </style>

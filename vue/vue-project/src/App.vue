@@ -10,11 +10,13 @@
     <!-- <emp-view></emp-view> -->
     <!-- 动态展示标签 -->
     <router-view></router-view> 
+    <!--  <insertbook-view></insertbook-view> -->
     <!-- <login-view></login-view> -->
   </div>
 </template>
 
 <script>
+/* import InsertbookView from './views/InsertbookView.vue'; */
 /* import UpdatebookView from './views/UpdatebookView.vue'; */
 /* import InsertbookView from './views/InsertbookView.vue';  */
 
@@ -22,7 +24,7 @@
 //import ElementView from './views/element/ElementView.vue';
 // import LoginView from './views/LoginView.vue';
 export default {
-  components: {/*LoginView*//*EmpView*/ /*ElementView*/ },
+  components: {/* InsertbookView *//*LoginView*//*EmpView*/ /*ElementView*/ },
   data: function () {
     return {
       message: "hello vue", //数据模型
